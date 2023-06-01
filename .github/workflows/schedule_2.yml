@@ -35,7 +35,7 @@ jobs:
                 -H 'sec-fetch-site: same-origin' \
                 -H 'user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36' \
                 -H 'x-client-version: 2.37.1' \
-                --data-raw '{"collaboratorId":'${{ secrets.COLLABORATOR_ID }}',"type":"office","date":"'$day'","deskId":"'${{ secrets.DESK_ID }}'","period":"day"}' \
+                --data-raw '{"collaboratorId":'${{ secrets.COLLABORATOR_ID }}',"type":"office","date":"'$day'","deskId":"a954e7ca-4cc1-48e3-8715-f824306d9a3f","period":"day"}' \
                 --compressed
             fi
           done
