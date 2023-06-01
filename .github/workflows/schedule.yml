@@ -14,7 +14,7 @@ jobs:
           echo "Looping over days"
           echo "${{ toJson(steps.loop.outputs) }}"
           for i in {0..6}; do
-            day=$(date --date="4 weeks $i days" +%Y-%m-%d)
+            day=$(date --date="6 weeks $i days" +%Y-%m-%d)
             if [ $(date -d "$day" +%u) -le 5 ]; then
               echo "Processing day '$day'"
               curl 'https://app.semana.io/api/bookings/' \
